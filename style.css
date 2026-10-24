@@ -1,0 +1,250 @@
+/* ============================= */
+/* BASIC PAGE SETUP */
+/* ============================= */
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(circle at top left, #ffd6ec, transparent 40%),
+        radial-gradient(circle at bottom right, #d8b4fe, transparent 40%),
+        linear-gradient(135deg, #ffd6ec, #e8c8ff, #d8b4fe);
+
+    position: relative;
+}
+
+
+/* ============================= */
+/* MAIN CONTAINER */
+/* ============================= */
+
+.container {
+    width: 90%;
+    max-width: 750px;
+
+    position: relative;
+    z-index: 5;
+}
+
+
+/* ============================= */
+/* WHITE TEXT CARD */
+/* ============================= */
+
+.card {
+    background: rgba(255, 255, 255, 0.94);
+
+    padding: 45px;
+
+    border-radius: 30px;
+
+    text-align: center;
+
+    border: 3px solid #e4a8ff;
+
+    box-shadow:
+        0 15px 40px rgba(100, 40, 130, 0.25),
+        0 0 25px rgba(217, 70, 239, 0.15);
+}
+
+
+/* ============================= */
+/* HEADING */
+/* ============================= */
+
+h1 {
+    color: #8a2be2;
+
+    font-size: 42px;
+
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+
+h2 {
+    color: #d633a6;
+
+    margin-top: 30px;
+}
+
+
+/* ============================= */
+/* PARAGRAPHS */
+/* ============================= */
+
+p {
+    color: #444;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin: 18px 0;
+}
+
+
+/* ============================= */
+/* BUTTON */
+/* ============================= */
+
+.button {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 14px 30px;
+
+    background: linear-gradient(
+        90deg,
+        #d946ef,
+        #8b5cf6
+    );
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border-radius: 30px;
+
+    box-shadow: 0 6px 15px rgba(139, 92, 246, 0.3);
+
+    transition: 0.3s;
+}
+
+
+.button:hover {
+    transform: scale(1.08);
+
+    box-shadow:
+        0 8px 20px rgba(139, 92, 246, 0.4);
+}
+
+
+/* ============================= */
+/* LITTLE HEART ABOVE HEADING */
+/* ============================= */
+
+.small-heart {
+    color: #e84393;
+
+    font-size: 35px;
+
+    animation: heartbeat 1.5s infinite;
+}
+
+
+@keyframes heartbeat {
+
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+
+/* ============================= */
+/* BACKGROUND DECORATIONS */
+/* ============================= */
+
+.decoration {
+    position: absolute;
+
+    z-index: 1;
+
+    pointer-events: none;
+
+    user-select: none;
+}
+
+
+/* Hearts */
+
+.heart1 {
+    top: 12%;
+    left: 10%;
+
+    font-size: 70px;
+
+    color: rgba(255, 80, 170, 0.35);
+
+    animation: float 5s ease-in-out infinite;
+}
+
+
+.heart2 {
+    bottom: 10%;
+    right: 10%;
+
+    font-size: 85px;
+
+    color: rgba(150, 80, 255, 0.3);
+
+    animation: float 6s ease-in-out infinite reverse;
+}
+
+
+/* Stars */
+
+.star1 {
+    top: 18%;
+    right: 15%;
+
+    font-size: 55px;
+
+    color: rgba(255, 255, 255, 0.8);
+
+    animation: sparkle 2s infinite;
+}
+
+
+.star2 {
+    bottom: 18%;
+    left: 15%;
+
+    font-size: 45px;
+
+    color: rgba(255, 255, 255, 0.8);
+
+    animation: sparkle 3s infinite;
+}
+
+
+/* Decorative circles */
+
+.circle1 {
+    width: 140px;
+    height: 140px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 105, 180, 0.18);
+
+    top: -40px;
+    right: -30px;
+
+    animation: float 7s ease-in-out infinite;
+}
+
+
+.circle2 {
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50%;
+
+    background: }
